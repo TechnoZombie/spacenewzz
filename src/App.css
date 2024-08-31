@@ -1,0 +1,288 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+}
+
+.Header h1 {
+  color: darkolivegreen;
+  text-shadow: 5px 5px 20px rgb(85, 107, 46);
+  /* offset-x | offset-y | blur-radius | color */
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+
+.Header h1:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.searchBar {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.searchBar #moon, #sun{
+  width: 25px;
+  height: 25px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+
+
+#searchInput {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #242424;
+  color: white;
+  border: 3px solid #556b2f;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 0.6em 1.2em;
+}
+
+#searchButton {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 200;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#searchButton:hover {
+  border-color: #646cff;
+}
+#searchButton:focus,
+#searchButton:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+#previousButton,
+#nextButton {
+    border-radius: 8px;
+    margin-left: 5px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 200;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: rgba(255, 255, 255, 0.87);
+  }
+ 
+  #previousButton:hover {
+    border-color: #646cff;
+  }
+  #previousButton:focus,
+  #previousButton:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  #nextButton:hover {
+    border-color: #646cff;
+  }
+  #nextButton:focus,
+  #nextButton:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  #linkButton{
+    width: 95%;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #6970fa;
+   
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: rgb(255, 255, 255);
+  }
+
+  #linkButton:hover{
+    background-color: #424bff;
+  }
+
+  #linkButton:focus-visible{
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  .Board {
+    border-radius: 2%;
+    padding: 1%;
+    position: relative;
+    display: grid;
+    width: 90%;
+    height: auto;
+    justify-items: center
+  }
+
+
+
+.Footer {
+  display: block;
+  justify-content: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.light-mode {
+  color: #333; /* Adjusted text color for better contrast */
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+.light-mode body {
+  background-color: red;
+}
+
+.light-mode a {
+  color: #007bff; /* Blue link color */
+}
+
+.light-mode a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.light-mode h1 {
+  color: darkolivegreen; /* Dark green heading color */
+  text-shadow: 5px 5px 20px rgba(85, 107, 46, 0.5); /* Lightened text shadow */
+  -webkit-text-stroke: none; /* Removed text stroke */
+}
+
+.light-mode .Header h1:hover {
+  filter: drop-shadow(0 0 2em #007bffaa); /* Lighter shadow on hover */
+}
+
+.light-mode #searchInput {
+  background-color: #fff; /* White background for input */
+  color: #333; /* Dark text color */
+  border: 3px solid #007bff; /* Blue border */
+}
+
+.light-mode #searchButton {
+  background-color: #007bff; /* Blue background for button */
+  color: #fff; /* White text color */
+}
+
+.light-mode #searchButton:hover {
+  background-color: #0050a6; /* Darker blue border on hover */
+}
+
+.light-mode .newsCard {
+  border: 2px solid #007bff; /* Blue border for cards */
+}
+
+.light-mode .newsCard .newsTitle {
+  color: #007bff; /* Blue title color */
+}
+
+.light-mode .newsCard .newsSite {
+  color: #555; /* Darker text color for news site */
+}
+
+.light-mode .logo:hover {
+  filter: drop-shadow(0 0 2em #007bffaa); /* Lighter shadow on logo hover */
+}
+
+

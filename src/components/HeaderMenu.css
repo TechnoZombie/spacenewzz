@@ -1,0 +1,28 @@
+.MenuContainer{
+    display: flex;
+    position: relative;
+    border: solid darkolivegreen;
+    border-radius: 10px;
+    border-width: 3px;
+    width:  80%;
+    padding: 0.5%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+ 
+    }
+
+    .MenuButton{
+        display: flex;
+        position: relative;
+        margin-left: 1%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0.5%;
+        align-items: center;
+    }
+
+    .MenuButton:hover{
+        color: darkolivegreen;
+        cursor: pointer;
+    }

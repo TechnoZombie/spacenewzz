@@ -1,0 +1,65 @@
+.cardHolder {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    border: 3px solid darkolivegreen;
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.newsCard {
+    max-width: 250px;
+    max-height: 500px;
+    min-height: 500px;
+    border: 2px solid #556b2f;
+    /* Added pixel value for border width */
+    border-radius: 5px;
+    position: relative;
+    /* Added relative positioning for absolute positioning of children */
+    }
+  
+  .newsCard .newsTitle {
+    color: #9da2ff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .newsCard .newsSummary {
+    overflow: scroll;
+    max-height: 160px;
+    max-width: 90%;
+    text-align: justify;
+    margin: 1px;
+    margin-left: 10px;
+  }
+  /* Hide scrobar */
+  .newsCard .newsSummary::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .newsCard .newsSummary::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust as needed */
+  }
+  
+  .newsCard .newsSite {
+    width: 100%;
+    position: absolute;
+    bottom: 2%; /* Positioned at the bottom */
+  }
+
+  .newsImage {
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    max-width: 90%;
+    max-height: 150px;
+  }
+  
+  .newsCard .newsImageWrapper {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }

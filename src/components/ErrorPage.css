@@ -1,0 +1,63 @@
+.container {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94%;
+  /* Adjust the height as needed */
+}
+
+.errorHolder {
+  border-radius: 10px;
+  border: 3px solid darkolivegreen;
+  padding: 20px 240px 40px 240px;
+  /* Adjust the padding as needed */
+  margin-right: 20px;
+  /* Add some space between the elements */
+
+}
+
+.astronaut {
+  width: 100%;
+  /* Adjust the width as needed */
+  border-radius: 10px;
+  /* Apply border radius to the image */
+  padding-bottom: 20px;
+
+}
+
+.errorCard p {
+  font-size: 1.5em;
+  line-height: 1;
+  color: darkolivegreen;
+  text-shadow: 5px 5px 10px rgb(85, 107, 46);
+  /* offset-x | offset-y | blur-radius | color */
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+}
+
+.errorCard p:hover {
+  filter: drop-shadow(0 0 1em #ff0000aa);
+}
+
+.errorHolder .MenuButton {
+  width: 90%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #6970fa;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+.errorHolder .MenuButton:hover {
+  background-color: #424bff;
+}
+
+.errorHolder .MenuButton:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
