@@ -1,5 +1,4 @@
 # Spacenewzz!
-// Copyright (c) 2024
 
 Spacenewzz! is a React application that allows users to browse the latest news articles related to space exploration. It utilizes the Spaceflight News API to fetch and display news articles, along with some fun Chuck Norris facts to keep users entertained while the data is loading.
 
@@ -26,10 +25,10 @@ The LoadingScreen component provides users with a loading animation and displays
 
 To run the Space News Board locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/space-news-board.git`
+1. Clone the repository: `git clone https://github.com/TechnoZombie/spacenewzz.git`
 2. Navigate to the project directory: `cd space-news-board`
 3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
+4. Start the development server: `npm run dev`
 
 ## Technologies Used
 
@@ -48,8 +47,4 @@ To run the Space News Board locally, follow these steps:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
-About
-Space News Board is a React application designed to keep space enthusiasts up-to-date with the latest news articles related to space exploration. With features such as search, sorting, and light/dark mode toggling, Space News Board provides a user-friendly interface for discovering and reading space news. Additionally, the integration of Chuck Norris facts adds a touch of humor to the loading screen, making the app both informative and entertaining.
+Copyright (c) 2024
