@@ -209,25 +209,25 @@ function App() {
       </div>
 
       <div className={`Board ${lightMode ? "light-mode" : ""}`}>
-        <Routes>
+        <Routes basename="/spacenewzz">
           <Route
-            path="/"
+            path="/spacenewzz"
             element={<NewsCard newsList={newsList} loading={loading} />}
           />
           <Route
-            path="/news"
+            path="spacenewzz/news"
             element={<NewsCard newsList={newsList} loading={loading} />}
           />
           <Route
-            path="/blogs"
+            path="spacenewzz/blogs"
             element={<Blogs blogsList={blogsList} loading={loading} />}
           />
           <Route
-            path="/reports"
+            path="spacenewzz/reports"
             element={<Reports reportsList={reportsList} loading={loading} />}
           />
 
-          <Route path="/loading" element={<LoadingScreen />} />
+          <Route path="spacenewzz/loading" element={<LoadingScreen />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>

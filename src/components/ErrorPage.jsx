@@ -14,9 +14,9 @@ function ErrorPage({ loading }) {
                 <div className='errorCard'>
                     <p>404!</p>
                     <p>You&apos;ve drifted too far from the spaceship!</p>
-                    <img className="astronaut" src="./astronaut.png" alt="astronaut_image" />
+                    <img className="astronaut" src="./public/astronaut.png" alt="astronaut_image" />
                 </div>
-                <MenuButton label='RETURN TO NEWS' link='/news'></MenuButton>
+                <MenuButton label='RETURN TO NEWS' link='spacenewzz/news'></MenuButton>
             </div>
                   )}
         </div>
