@@ -26,7 +26,7 @@ The LoadingScreen component provides users with a loading animation and displays
 To run the Space News Board locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/TechnoZombie/spacenewzz.git`
-2. Navigate to the project directory: `cd space-news-board`
+2. Navigate to the project directory: `cd spacenewzz`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
