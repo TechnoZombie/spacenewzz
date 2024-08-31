@@ -2,7 +2,8 @@ const Header = () => {
   const handleReloadPage = (e) => {
     e.preventDefault();
     //window.location.reload(); //reload current page
-    window.location.href = window.location.href = "/spacenewzz"; //reload base page
+    //window.location.href = window.location.origin + "/spacenewzz/";
+    window.location.href = "/spacenewzz/"; //reload base page
   };
 
   const handleHeaderClick = (e) => {
